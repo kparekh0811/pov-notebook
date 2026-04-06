@@ -1,0 +1,247 @@
+Depth Value,Status,Assignee,Due Date,Status Text,Roll up children's status,Name,Description,Success Criteria,Shared
+1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Phase 0: Sign up For Trial,,,false
+1.1,Not Started,Not Assigned,No due date,,false,Sign Up for a Datadog Account,Sign Up for a Datadog Account ( https://www.datadoghq.com/ ),,false
+1.2,Not Started,Not Assigned,No due date,,false,Get API Key For Agent Installation,Get API Key For Agent Installation ( https://app.datadoghq.com/organization-settings/api-keys ),Successfully retrieve API Key,false
+2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Phase 1: Set up and Data Collection,,,false
+2.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Infrastructure,,,false
+2.1.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Host Based Agent - Linux,,,false
+2.1.1.1,Not Started,Not Assigned,No due date,,false,Deploy Datadog Agent,Deploy Datadog Agent ( https://docs.datadoghq.com/agent/basic_agent_usage/linux/ ),,false
+2.1.1.10,Not Started,Not Assigned,No due date,,false,(Debug) Verify outbound traffic is allowed,Verify outbound traffic is allowed ( https://docs.datadoghq.com/agent/configuration/network/ ),,false
+2.1.1.11,Not Started,Not Assigned,No due date,,false,(Debug) Make sure that you are sending data to the right Datadog region,(Debug) Make sure that you are sending data to the right Datadog region,,false
+2.1.1.12,Not Started,Not Assigned,No due date,,false,(Debug) Add Datadog IPs to the Allowed Range,Add Datadog IPs to the Allowed Range ( https://ip-ranges.datadoghq.com/ ),,false
+2.1.1.2,Not Started,Not Assigned,No due date,,false,(Recommended) Add Tags,Add Tags ( https://docs.datadoghq.com/getting_started/tagging/assigning_tags ),,false
+2.1.1.3,Not Started,Not Assigned,No due date,,false,(Recommended) Enable Process Monitoring,Enable Process Monitoring ( https://docs.datadoghq.com/infrastructure/process/?tab=linuxwindows#installation ),,false
+2.1.1.4,Not Started,Not Assigned,No due date,,false,(Optional) Set Datadog Region,Set Datadog Region ( https://docs.datadoghq.com/getting_started/site/ ),,false
+2.1.1.5,Not Started,Not Assigned,No due date,,false,(Optional) Enable Logs,Enable Logs ( https://docs.datadoghq.com/logs/log_collection/?tab=host ),,false
+2.1.1.6,Not Started,Not Assigned,No due date,,false,(Optional) Enable CNM,Enable CNM ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/setup ),,false
+2.1.1.7,Not Started,Not Assigned,No due date,,false,(Optional) Enable Debug Mode,Enable Debug Mode ( https://docs.datadoghq.com/agent/troubleshooting/debug_mode/ ),,false
+2.1.1.8,Not Started,Not Assigned,No due date,,false,(Optional) Setup Proxy Config [NO LINK NEED TO ADD],(Optional) Setup Proxy Config,,false
+2.1.1.9,Not Started,Not Assigned,No due date,,false,(Debug) Set Datadog Agent to Debug,Set Datadog Agent to Debug ( https://docs.datadoghq.com/agent/troubleshooting/debug_mode/ ),,false
+2.1.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Host Based Agent - Windows,,,false
+2.1.2.1,Not Started,Not Assigned,No due date,,false,Deploy Datadog Agent,Deploy Datadog Agent ( https://docs.datadoghq.com/agent/basic_agent_usage/linux/ ),,false
+2.1.2.10,Not Started,Not Assigned,No due date,,false,(Debug) Verify outbound traffic is allowed,Verify outbound traffic is allowed ( https://docs.datadoghq.com/agent/configuration/network/ ),,false
+2.1.2.11,Not Started,Not Assigned,No due date,,false,(Debug) Make sure that you are sending data to the right Datadog region,(Debug) Make sure that you are sending data to the right Datadog region,,false
+2.1.2.12,Not Started,Not Assigned,No due date,,false,(Debug) Add Datadog IPs to the Allowed Range,Add Datadog IPs to the Allowed Range ( https://ip-ranges.datadoghq.com/ ),,false
+2.1.2.2,Not Started,Not Assigned,No due date,,false,(Recommended) Add Tags,Add Tags ( https://docs.datadoghq.com/getting_started/tagging/assigning_tags ),,false
+2.1.2.3,Not Started,Not Assigned,No due date,,false,(Recommended) Enable Process Monitoring,Enable Process Monitoring ( https://docs.datadoghq.com/infrastructure/process/?tab=linuxwindows#installation ),,false
+2.1.2.4,Not Started,Not Assigned,No due date,,false,(Optional) Set Datadog Region,Set Datadog Region ( https://docs.datadoghq.com/getting_started/site/ ),,false
+2.1.2.5,Not Started,Not Assigned,No due date,,false,(Optional) Enable Logs,Enable Logs ( https://docs.datadoghq.com/logs/log_collection/?tab=host ),,false
+2.1.2.6,Not Started,Not Assigned,No due date,,false,(Optional) Enable CNM,Enable CNM ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/setup ),,false
+2.1.2.7,Not Started,Not Assigned,No due date,,false,(Optional) Enable Debug Mode,Enable Debug Mode ( https://docs.datadoghq.com/agent/troubleshooting/debug_mode/ ),,false
+2.1.2.8,Not Started,Not Assigned,No due date,,false,(Optional) Setup Proxy Config [NO LINK NEED TO ADD],(Optional) Setup Proxy Config,,false
+2.1.2.9,Not Started,Not Assigned,No due date,,false,(Debug) Set Datadog Agent to Debug,Set Datadog Agent to Debug ( https://docs.datadoghq.com/agent/troubleshooting/debug_mode/ ),,false
+2.1.3,Not Started,Not Assigned,No due date,,false,On-Prem,,,false
+2.1.4,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,AWS,,,false
+2.1.4.1,Not Started,Not Assigned,No due date,,false,Enable AWS Integration,Enable AWS Integration ( https://docs.datadoghq.com/integrations/aws ),,false
+2.1.4.2,Not Started,Not Assigned,No due date,,false,(Pick One) Deploy via Cloud Formation,Deploy via Cloud Formation ( https://docs.datadoghq.com/getting_started/integrations/aws/ ),,false
+2.1.4.3,Not Started,Not Assigned,No due date,,false,(Pick one) Deploy via Terraform,Deploy via Terraform ( https://docs.datadoghq.com/integrations/guide/aws-terraform-setup/ ),,false
+2.1.4.4,Not Started,Not Assigned,No due date,,false,(Informational) Agent Overhead,Agent Overhead ( https://docs.datadoghq.com/agent/basic_agent_usage/?tab=agentv6v7#agent-overhead ),,false
+2.1.5,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Azure,,,false
+2.1.5.1,Not Started,Not Assigned,No due date,,false,(Pick one) Enable Azure via Terraform,Enable Azure via Terraform ( https://docs.datadoghq.com/integrations/guide/azure-programmatic-management/?tab=windows ),,false
+2.1.5.2,Not Started,Not Assigned,No due date,,false,(Pick One) Enable Azure via Azure CLI,Enable Azure via Azure CLI ( https://docs.datadoghq.com/integrations/guide/azure-manual-setup/?tab=azurecli ),,false
+2.1.5.3,Not Started,Not Assigned,No due date,,false,(US5 - Pick One) Enable Azure Native via Terraform,Enable Azure Native via Terraform,,false
+2.1.5.4,Not Started,Not Assigned,No due date,,false,(US5 - Pick One) Enable Azure Native via UI,Enable Azure Native via UI,,false
+2.1.6,Not Started,Not Assigned,No due date,,false,(Pick One) Enable GCP Project,Enable GCP Project,,false
+2.1.7,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,GCP,,,false
+2.1.7.1,Not Started,Not Assigned,No due date,,false,(Pick One) Enable GCP Organization / Folder,Enable GCP Organization / Folder,,false
+2.1.8,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Kubernetes (OpenShift),,,false
+2.1.8.1,Not Started,Not Assigned,No due date,,false,(Pick One) Install Datadog via Helm,,,false
+2.1.8.2,Not Started,Not Assigned,No due date,,false,(Pick One) Install Datadog via Operator,,,false
+2.1.8.3,Not Started,Not Assigned,No due date,,false,Enable Log Collection,Enable Log Collection ( https://docs.datadoghq.com/agent/kubernetes/log/?tab=helm ),,false
+2.1.8.4,Not Started,Not Assigned,No due date,,false,Enable Live Container Metrics,Enable Live Container Metrics ( https://docs.datadoghq.com/infrastructure/livecontainers/configuration/?tab=helm ),,false
+2.1.8.5,Not Started,Not Assigned,No due date,,false,Enable Live Processes,Enable Live Processes ( https://docs.datadoghq.com/infrastructure/process/?tab=linuxwindows ),,false
+2.1.8.6,Not Started,Not Assigned,No due date,,false,Enable Kubernetes Event Collection,Enable Kubernetes Event Collection ( https://docs.datadoghq.com/agent/kubernetes/configuration/?tab=operator#event-collection ),,false
+2.1.8.7,Not Started,Not Assigned,No due date,,false,Enable Network Performance Monitoring,Enable Network Performance Monitoring ( https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=kubernetes#setup ),,false
+2.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Synthetic Testing,,,false
+2.2.1,Not Started,Not Assigned,No due date,,false,API: HTTP Synthetic Tests,API: HTTP Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/http_tests/?tab=requestoptions ),,false
+2.2.10,Not Started,Not Assigned,No due date,,false,Private Locations API Tests,Private Locations API Tests ( https://docs.datadoghq.com/synthetics/private_locations?tab=docker ),,false
+2.2.11,Not Started,Not Assigned,No due date,,false,(Informational) Synthetic Dashboards,(Informational) Synthetic Dashboards ( https://docs.datadoghq.com/synthetics/dashboards/ ),,false
+2.2.12,Not Started,Not Assigned,No due date,,false,(Informational) Data Collected,(Informational) Data Collected ( https://docs.datadoghq.com/synthetics/dashboards/ ),,false
+2.2.2,Not Started,Not Assigned,No due date,,false,API: Multistep API Tests,API: Multistep API Tests ( https://docs.datadoghq.com/synthetics/multistep?tab=requestoptions ),,false
+2.2.3,Not Started,Not Assigned,No due date,,false,API: DNS Synthetic Tests,API: DNS Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/dns_tests/ ),,false
+2.2.4,Not Started,Not Assigned,No due date,,false,API: ICMP Synthetic Tests,API: ICMP Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/icmp_tests/ ),,false
+2.2.5,Not Started,Not Assigned,No due date,,false,API: SSL Synthetic Tests,API: SSL Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/ssl_tests/ ),,false
+2.2.6,Not Started,Not Assigned,No due date,,false,API: TCP Synthetic Tests,API: TCP Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/tcp_tests/ ),,false
+2.2.7,Not Started,Not Assigned,No due date,,false,API: UDP Synthetic Test,API: UDP Synthetic Test ( https://docs.datadoghq.com/synthetics/api_tests/udp_tests/ ),,false
+2.2.8,Not Started,Not Assigned,No due date,,false,API: WebSocket Synthetic Tests,API: WebSocket Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/websocket_tests/?tab=requestoptions ),,false
+2.2.9,Not Started,Not Assigned,No due date,,false,API: gRPC Synthetic Tests,API: gRPC Synthetic Tests ( https://docs.datadoghq.com/synthetics/api_tests/grpc_tests/?tab=unarycall ),,false
+2.3,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Log Collection,,,false
+2.3.1,Not Started,Not Assigned,No due date,,false,All Datadog Log Integrations,All Datadog Log Integrations ( https://docs.datadoghq.com/integrations/#cat-log-collection ),,false
+2.3.10,Not Started,Not Assigned,No due date,,false,Configure Log Archive via S3 Bucket (Cold Storage),Configure Log Archive via S3 Bucket (Cold Storage ( https://docs.datadoghq.com/logs/archives/?tab=awss3 ) ),,false
+2.3.11,Not Started,Not Assigned,No due date,,false,Define Indexes & Exclusion Filters,Define Indexes & Exclusion Filters ( https://docs.datadoghq.com/logs/log_configuration/indexes/ ),,false
+2.3.12,Not Started,Not Assigned,No due date,,false,SNMP Trap Logs,SNMP Trap Logs ( https://docs.datadoghq.com/integrations/rapdev_snmp_trap_logs/ ),,false
+2.3.13,Not Started,Not Assigned,No due date,,false,Host Agent Log Collection,Host Agent Log Collection ( https://docs.datadoghq.com/agent/logs/?tab=tailfiles ),,false
+2.3.14,Not Started,Not Assigned,No due date,,false,Send AWS Services Logs,Send AWS Services Logs ( https://docs.datadoghq.com/logs/guide/send-aws-services-logs-with-the-datadog-lambda-function/?tab=awsconsole ),,false
+2.3.15,Not Started,Not Assigned,No due date,,false,Send Azure Logs,Send Azure Logs ( https://docs.datadoghq.com/integrations/azure/?tab=azurecliv20#log-collection ),,false
+2.3.16,Not Started,Not Assigned,No due date,,false,Send GCP Logs,Send GCP Logs ( https://docs.datadoghq.com/integrations/google_cloud_platform/#log-collection ),,false
+2.3.17,Not Started,Not Assigned,No due date,,false,Network Device - Syslog Collection,Network Device - Syslog Collection ( https://docs.datadoghq.com/integrations/syslog_ng/ ),,false
+2.3.18,Not Started,Not Assigned,No due date,,false,Windows Event Logs,Windows Event Logs ( https://docs.datadoghq.com/integrations/win32_event_log/ ),,false
+2.3.19,Not Started,Not Assigned,No due date,,false,(Informational) Watchdog Insights for Logs,(Informational) Watchdog Insights for Logs ( https://docs.datadoghq.com/logs/explorer/watchdog_insights/#overview ),,false
+2.3.2,Not Started,Not Assigned,No due date,,false,[Informational] Getting Started With Logs,[Informational] Getting Started With Logs ( https://docs.datadoghq.com/getting_started/logs/?tab=ussite ),,false
+2.3.3,Not Started,Not Assigned,No due date,,false,[Informational Log Collection and Integrations,[Informational Log Collection and Integrations ( https://docs.datadoghq.com/logs/log_collection/?tab=host ),,false
+2.3.4,Not Started,Not Assigned,No due date,,false,[Informational] Logging Without Limits Guide,[Informational] Logging Without Limits Guide ( https://docs.datadoghq.com/logs/guide/getting-started-lwl/ ),,false
+2.3.5,Not Started,Not Assigned,No due date,,false,[Informational] Log Attributes and Aliasing,[Informational] Log Attributes and Aliasing ( https://docs.datadoghq.com/logs/log_configuration/attributes_naming_convention/ ),,false
+2.3.6,Not Started,Not Assigned,No due date,,false,[Informational] Add Custom Metadata to Logs - Enrichment Tables,[Informational] Add Custom Metadata to Logs - Enrichment Tables ( https://docs.datadoghq.com/logs/guide/enrichment-tables/?tab=manualupload ),,false
+2.3.7,Not Started,Not Assigned,No due date,,false,[Informational] Monitor Log Usage,[Informational] Monitor Log Usage ( https://docs.datadoghq.com/logs/guide/logs-monitors-on-volumes/ ),,false
+2.3.8,Not Started,Not Assigned,No due date,,false,Log Explorer - Query Logs (Hot Storage) ,Log Explorer - Query Logs (Hot Storage ( https://docs.datadoghq.com/logs/explorer/ ) ),,false
+2.3.9,Not Started,Not Assigned,No due date,,false,Configure Log Archive via Online Archives (Warm Storage),Configure Log Archive via Online Archives (Warm Storage) ( https://www.datadoghq.com/blog/online-archives-datadog/ ),,false
+2.4,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,APM,,,false
+2.4.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Node.js,,,false
+2.4.1.1,Not Started,Not Assigned,No due date,,false,Install the Datadog Node.js Tracing Client,Install the Datadog Node.js Tracing Client ( https://docs.datadoghq.com/tracing/setup_overview/setup/nodejs/?tab=containers ),,false
+2.4.1.2,Not Started,Not Assigned,No due date,,false,Tracing ECS Applications,Tracing ECS Applications ( https://docs.datadoghq.com/agent/amazon_ecs/apm/?tab=ec2metadataendpoint ),,false
+2.4.1.3,Not Started,Not Assigned,No due date,,false,Instrumenting Node.js Lamabda Applications,Instrumenting Node.js Lamabda Applications ( https://docs.datadoghq.com/serverless/installation/nodejs/?tab=datadogcli ),,false
+2.4.1.4,Not Started,Not Assigned,No due date,,false,Configure Node.js Runtime Metric Collection,Configure Node.js Runtime Metric Collection ( https://docs.datadoghq.com/tracing/runtime_metrics/nodejs/ ),,false
+2.4.1.5,Not Started,Not Assigned,No due date,,false,Profiling Node.js Applications,Profiling Node.js Applications ( https://docs.datadoghq.com/tracing/profiler/enabling/nodejs/?tab=environmentvariables ),,false
+2.4.1.6,Not Started,Not Assigned,No due date,,false,Connect Node.js Logs and Traces,Connect Node.js Logs and Traces ( https://docs.datadoghq.com/tracing/connect_logs_and_traces/nodejs/ ),,false
+2.4.1.7,Not Started,Not Assigned,No due date,,false,Synthetics: API Tests,Synthetics: API Tests ( https://docs.datadoghq.com/synthetics/api_tests/ ),,false
+2.4.1.8,Not Started,Not Assigned,No due date,,false,Unified Service Tagging,Unified Service Tagging ( https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=kubernetes ),,false
+2.4.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Java,,,false
+2.4.2.1,Not Started,Not Assigned,No due date,,false,Install the Datadog Java Tracing Client,Install the Datadog Java Tracing Client ( https://docs.datadoghq.com/tracing/setup_overview/setup/java?tab=containers ),,false
+2.4.2.2,Not Started,Not Assigned,No due date,,false,Tracing ECS Applications,Tracing ECS Applications ( https://docs.datadoghq.com/agent/amazon_ecs/apm/?tab=ec2metadataendpoint ),,false
+2.4.2.3,Not Started,Not Assigned,No due date,,false,Configure Java Runtime Metrics,Configure Java Runtime Metrics ( https://docs.datadoghq.com/tracing/metrics/runtime_metrics/?tab=java ),,false
+2.4.2.4,Not Started,Not Assigned,No due date,,false,Profiling Java Applications,Profiling Java Applications ( https://docs.datadoghq.com/tracing/profiler/enabling/java/?tab=commandarguments ),,false
+2.4.2.5,Not Started,Not Assigned,No due date,,false,Connect Java Logs and Traces,Connect Java Logs and Traces ( https://docs.datadoghq.com/tracing/connect_logs_and_traces/java/?tab=log4j2 ),,false
+2.4.2.6,Not Started,Not Assigned,No due date,,false,Synthetics: API Tests,Synthetics: API Tests ( https://docs.datadoghq.com/synthetics/api_tests/ ),,false
+2.4.2.7,Not Started,Not Assigned,No due date,,false,Unified Service Tagging,Unified Service Tagging ( https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=kubernetes ),,false
+2.4.3,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,.NET,,,false
+2.4.3.1,Not Started,Not Assigned,No due date,,false,Install the Datadog .NET Tracing Client,Install the Datadog .NET Tracing Client ( https://docs.datadoghq.com/tracing/runtime_metrics/dotnet/ ),,false
+2.4.3.2,Not Started,Not Assigned,No due date,,false,Configure .NET Runtime Metrics,Configure .NET Runtime Metrics ( https://docs.datadoghq.com/tracing/runtime_metrics/dotnet/ ),,false
+2.4.3.3,Not Started,Not Assigned,No due date,,false,Profiling .NET Applications,Profiling .NET Applications ( https://docs.datadoghq.com/tracing/profiler/enabling/dotnet/?tab=internetinformationservicesiis ),,false
+2.4.3.4,Not Started,Not Assigned,No due date,,false,Connect .NET Logs and Traces,Connect .NET Logs and Traces ( https://docs.datadoghq.com/tracing/connect_logs_and_traces/dotnet/?tab=serilog ),,false
+2.4.3.5,Not Started,Not Assigned,No due date,,false,Synthetics: API Tests,Synthetics: API Tests ( https://docs.datadoghq.com/synthetics/api_tests/ ),,false
+2.4.3.6,Not Started,Not Assigned,No due date,,false,Unified Service Tagging,Unified Service Tagging ( https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=kubernetes ),,false
+2.4.4,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Misc,,,false
+2.4.4.1,Not Started,Not Assigned,No due date,,false,(Informational) APM Glossary,(Informational) APM Glossary ( https://docs.datadoghq.com/tracing/visualization/ ),,false
+2.4.4.2,Not Started,Not Assigned,No due date,,false,(Informational) Deployment Version Tracking,(Informational) Deployment Version Tracking ( https://docs.datadoghq.com/tracing/deployment_tracking/ ),,false
+2.4.4.3,Not Started,Not Assigned,No due date,,false,(Informational) Watchdog Root Cause Analysis,(Informational) Watchdog Root Cause Analysis ( https://docs.datadoghq.com/watchdog/rca/ ),,false
+2.4.4.4,Not Started,Not Assigned,No due date,,false,Synthetics & CI/CD Integration,Synthetics & CI/CD Integration ( https://docs.datadoghq.com/synthetics/cicd_integrations ),,false
+2.4.5,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Python,,,false
+2.4.5.1,Not Started,Not Assigned,No due date,,false,Install the Datadog Python Tracing Client,Install the Datadog Python Tracing Client ( https://docs.datadoghq.com/tracing/metrics/runtime_metrics/?tab=python ),,false
+2.4.5.2,Not Started,Not Assigned,No due date,,false,Configure Python Runtime Metrics,Configure Python Runtime Metrics ( https://docs.datadoghq.com/tracing/metrics/runtime_metrics/?tab=python ),,false
+2.4.5.3,Not Started,Not Assigned,No due date,,false,Profiling Python Applications,Profiling Python Applications ( https://docs.datadoghq.com/profiler/enabling/python ),,false
+2.4.5.4,Not Started,Not Assigned,No due date,,false,Connect Python Logs and Traces,Connect Python Logs and Traces ( https://docs.datadoghq.com/tracing/other_telemetry/connect_logs_and_traces/python ),,false
+2.4.5.5,Not Started,Not Assigned,No due date,,false,Synthetics: API Tests,Synthetics: API Tests ( https://docs.datadoghq.com/synthetics/api_tests/ ),,false
+2.4.5.6,Not Started,Not Assigned,No due date,,false,Unified Service Tagging,Unified Service Tagging ( https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=kubernetes ),,false
+2.5,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,RUM,,,false
+2.5.1,Not Started,Not Assigned,No due date,,false,Real User Monitoring - Browsers,Real User Monitoring - Browsers ( https://docs.datadoghq.com/real_user_monitoring/browser/ ),,false
+2.5.2,Not Started,Not Assigned,No due date,,false,Real User Monitoring - Session Replay,Real User Monitoring - Session Replay ( https://docs.datadoghq.com/real_user_monitoring/session_replay/ ),,false
+2.5.3,Not Started,Not Assigned,No due date,,false,Real User Monitoring - Android,Real User Monitoring - Android ( https://docs.datadoghq.com/real_user_monitoring/android/?tab=kotlin ),,false
+2.5.4,Not Started,Not Assigned,No due date,,false,Real User Monitoring - iOS,Real User Monitoring - iOS ( https://docs.datadoghq.com/real_user_monitoring/ios/?tab=swift ),,false
+2.5.5,Not Started,Not Assigned,No due date,,false,Real User Monitoring - React Native,Real User Monitoring - React Native ( https://docs.datadoghq.com/real_user_monitoring/reactnative/ ),,false
+2.5.6,Not Started,Not Assigned,No due date,,false,Synthetics - Browser Tests,Synthetics - Browser Tests ( https://docs.datadoghq.com/synthetics/browser_tests/?tab=requestoptions ),,false
+2.5.7,Not Started,Not Assigned,No due date,,false,Connecting RUM & Traces (front-end / back-end correlation),Connecting RUM & Traces ( https://docs.datadoghq.com/real_user_monitoring/connect_rum_and_traces/?tab=browserrum ) (front-end / back-end correlation),,false
+2.5.8,Not Started,Not Assigned,No due date,,false,[Optional] Modifying RUM Data & Context,[Optional] Modifying RUM Data & Context ( https://docs.datadoghq.com/real_user_monitoring/browser/modifying_data_and_context/?tab=npm ),,false
+2.5.9,Not Started,Not Assigned,No due date,,false,(Informational) RUM Data Collected,(Informational) RUM Data Collected ( https://docs.datadoghq.com/real_user_monitoring/browser/data_collected/ ),,false
+2.6,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Security,,,false
+2.6.1,Not Started,Not Assigned,No due date,,false,Cloud SIEM,Cloud SIEM ( https://docs.datadoghq.com/security_platform/cloud_siem/ ),,false
+2.6.2,Not Started,Not Assigned,No due date,,false,Cloud Security Posture Management,Cloud Security Posture Management ( https://docs.datadoghq.com/security_platform/cspm/ ),,false
+2.6.3,Not Started,Not Assigned,No due date,,false,Workload Security,Workload Security ( https://docs.datadoghq.com/security_platform/cloud_workload_security/getting_started?tab=debian ),,false
+2.6.4,Not Started,Not Assigned,No due date,,false,Application Security,Application Security ( https://docs.datadoghq.com/security_platform/application_security/ ),,false
+2.7,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Networks,,,false
+2.7.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Network Performance Monitoring,,,false
+2.7.1.1,Not Started,Not Assigned,No due date,,false,Network Monitoring,Network Monitoring ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/ ),,false
+2.7.1.2,Not Started,Not Assigned,No due date,,false,Setup,Setup ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/setup/ ),,false
+2.7.1.3,Not Started,Not Assigned,No due date,,false,Overview Page,Overview Page ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/overview_page/ ),,false
+2.7.1.4,Not Started,Not Assigned,No due date,,false,Network Analytics,Network Analytics ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/network_analytics/ ),,false
+2.7.1.5,Not Started,Not Assigned,No due date,,false,Network Map,Network Map ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/network_map/ ),,false
+2.7.1.6,Not Started,Not Assigned,No due date,,false,Guides,Guides ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/guide/ ),,false
+2.7.1.7,Not Started,Not Assigned,No due date,,false,Supported Cloud Services,Supported Cloud Services ( https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring/supported_cloud_services/ ),,false
+2.7.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Network Device Monitoring,,,false
+2.7.2.1,Not Started,Not Assigned,No due date,,false,Network Device Monitoring,Network Device Monitoring ( https://docs.datadoghq.com/network_monitoring/devices ),,false
+2.7.2.2,Not Started,Not Assigned,No due date,,false,NDM Terms and Concepts,NDM Terms and Concepts ( https://docs.datadoghq.com/network_monitoring/devices/glossary ),,false
+2.7.2.3,Not Started,Not Assigned,No due date,,false,Setup,Setup ( https://docs.datadoghq.com/network_monitoring/devices/setup ),,false
+2.7.2.4,Not Started,Not Assigned,No due date,,false,Profiles,Profiles ( https://docs.datadoghq.com/network_monitoring/devices/profiles ),,false
+2.7.2.5,Not Started,Not Assigned,No due date,,false,Device Topology Map,Device Topology Map ( https://docs.datadoghq.com/network_monitoring/devices/device_topology_map ),,false
+2.7.2.6,Not Started,Not Assigned,No due date,,false,SNMP Metrics Reference,SNMP Metrics Reference ( https://docs.datadoghq.com/network_monitoring/devices/data ),,false
+2.7.2.7,Not Started,Not Assigned,No due date,,false,Troubleshooting,Troubleshooting ( https://docs.datadoghq.com/network_monitoring/devices/troubleshooting ),,false
+2.7.2.8,Not Started,Not Assigned,No due date,,false,Guides,Guides ( https://docs.datadoghq.com/network_monitoring/devices/guide/ ),,false
+2.7.3,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Netflow Monitoring,,,false
+2.7.3.1,Not Started,Not Assigned,No due date,,false,NetFlow Monitoring,NetFlow Monitoring ( https://docs.datadoghq.com/network_monitoring/netflow/ ),,false
+2.7.3.2,Not Started,Not Assigned,No due date,,false,Monitors,Monitors ( https://docs.datadoghq.com/monitors/types/netflow ),,false
+2.7.3.3,Not Started,Not Assigned,No due date,,false,Network Path,Network Path ( https://docs.datadoghq.com/network_monitoring/network_path/ ),,false
+2.7.3.4,Not Started,Not Assigned,No due date,,false,Synthetic Monitoring (Optional),Synthetic Monitoring (Optional) ( https://docs.datadoghq.com/synthetics/ ),,false
+2.8,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Cloud Cost Management,,,false
+2.8.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Setup,,,false
+2.8.1.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,AWS Setup,,,false
+2.8.1.1.1,Not Started,Not Assigned,No due date,,false,AWS Container Cost Allocation,"Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/cost_allocation/container_cost_allocation/?tab=aws )
+
+Prerequisites ( https://docs.datadoghq.com/cloud_cost_management/cost_allocation/container_cost_allocation/?tab=aws#prerequisites ) - Requires specific Datadog agent versions and installation
+
+*Note* - The CCM configuration must be in the organization that the containers live in. There is *no cross organization visibility* to container CCM data.",Once configured costs should begin to flow into the Datadog console,false
+2.8.1.2,Not Started,Not Assigned,No due date,,false,Azure Setup,"Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/setup/azure/?tab=billingaccounts )
+
+Prerequisites required:
+
+* Datadog Azure Integration
+* Amortized Cost Report in Azure
+* Actual Cost Report in Azure
+
+As of October 23, 2025 Pay As You Go Accounts are in Preview",Once configured data should start to flow to Datadog.,false
+2.8.1.3,Not Started,Not Assigned,No due date,,false,GCP Setup,"Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/setup/google_cloud/ )
+
+Prerequisites:
+
+* Google Cloud Integration
+* Detailed GCP Cost and Usage Report ( https://docs.datadoghq.com/cloud_cost_management/setup/google_cloud/#enable-detailed-usage-cost-export )
+* GCP Storage Bucket for Report",Once configured data should start to flow to Datadog,false
+2.8.1.4,Not Started,Not Assigned,No due date,,false,Oracle (OCI) Setup,"Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/setup/oracle/ )
+
+Prerequisites:
+
+* OCI tenancy
+* OCI integration installed in Datadog",Once completed data should flow to the Datadog console,false
+2.8.1.5,Not Started,Not Assigned,No due date,,false,SaaS Cost Integrations,"Documentation link ( https://docs.datadoghq.com/cloud_cost_management/setup/saas_costs/?tab=snowflake ). As of Oct. 24, 2025 the following are available. Build the customers required tools in your cloned version of this template.
+
+* Snowflake
+* Databricks
+* OpenAI
+* Anthropic
+* Github
+* Confluent Cloud
+* MongoDB
+* Elastic
+* Fastly
+* Twilio",Once configured data should flow to the Datadog console,false
+2.8.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Cost Allocation,,,false
+2.8.2.1,Not Started,Not Assigned,No due date,,false,Tag Pipelines,"Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/tags/tag_pipelines/ )
+
+It is possible to create a ruleset and tag rule even it if will not be used during the POV",Tag should be visible and possibly used in a report or dashboard.,false
+2.8.2.2,Not Started,Not Assigned,No due date,,false,Container / Big Query Cost Allocation,"This is used for container and Big Query costs. Remove this section if the customer doesn't have a requirement for either of these two use cases.
+
+Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/cost_allocation )
+
+* There are specific agent requirements ( https://docs.datadoghq.com/cloud_cost_management/cost_allocation/container_cost_allocation/?tab=aws#prerequisites ) for container allocation",Validate that costs have been correctly allocated.,false
+2.8.2.3,Not Started,Not Assigned,No due date,,false,Custom Cost Allocation,Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/custom_allocation_rules?tab=even ),Validate costs are allocated correctly.,false
+2.8.2.4,Not Started,Not Assigned,No due date,,false,Cost Recommendations,Documentation ( https://docs.datadoghq.com/cloud_cost_management/recommendations ),Review cloud cost recommendations,false
+2.8.3,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Operationalizing Cost Data,,,false
+2.8.3.1,Not Started,Not Assigned,No due date,,false,Reports,*Update for customer:* Link to reports tab ( https://demo.datadoghq.com/cost/analyze/dashboards ).,Create up to 2 custom dashboards to show cost allocations required.,false
+2.8.3.2,Not Started,Not Assigned,No due date,,false,Dashboards,*Update link for customer:* Link to Dashboards ( https://demo.datadoghq.com/cost/analyze/dashboards ),Create up to 2 custom dashboards to be used,false
+2.8.3.3,Not Started,Not Assigned,No due date,,false,Cost Monitors,Setup Documentation ( https://docs.datadoghq.com/cloud_cost_management/#create-a-cost-monitor ),Create up to 3 cost monitors for use.,false
+3,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Phase 2: Inside the UI,,,false
+3.1,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Dashboards & Visualizations,,,false
+3.1.1,Not Started,Not Assigned,No due date,,false,(Informational) Using Tags,(Informational) Using Tags ( https://docs.datadoghq.com/getting_started/tagging/using_tags?tab=assignment ),,false
+3.1.10,Not Started,Not Assigned,No due date,,false,Annotate Graphs and Collaborate,Annotate Graphs and Collaborate ( https://www.datadoghq.com/blog/real-time-graph-annotations/#add-graph-annotations-instantly ),,false
+3.1.11,Not Started,Not Assigned,No due date,,false,Host Map - Explore Tags and Aggregate Data,Host Map - Explore Tags and Aggregate Data ( https://docs.datadoghq.com/graphing/infrastructure/hostmap/#overview ),,false
+3.1.12,Not Started,Not Assigned,No due date,,false,Configure log archive,Configure log archive ( https://docs.datadoghq.com/logs/archives/?tab=awss3 ),,false
+3.1.13,Not Started,Not Assigned,No due date,,false,Configure logging without limits (Index exclusion filters),Configure logging without limits (Index exclusion filters) ( https://docs.datadoghq.com/logs/indexes/#exclusion-filters ),,false
+3.1.2,Not Started,Not Assigned,No due date,,false,Getting Started With Dashboards,Getting Started With Dashboards ( https://docs.datadoghq.com/getting_started/dashboards/ ),,false
+3.1.3,Not Started,Not Assigned,No due date,,false,Build Dashboards,Build Dashboards ( https://docs.datadoghq.com/dashboards/ ),,false
+3.1.4,Not Started,Not Assigned,No due date,,false,Create Service Level Objectives,Create Service Level Objectives ( https://app.datadoghq.com/slo ),,false
+3.1.5,Not Started,Not Assigned,No due date,,false,Overlay Events on Timeseries Graphs,Overlay Events on Timeseries Graphs ( https://docs.datadoghq.com/graphing/dashboards/widgets/#overlay-events-on-your-graph ),,false
+3.1.6,Not Started,Not Assigned,No due date,,false,DNS Monitoring,DNS Monitoring ( https://docs.datadoghq.com/network_monitoring/dns/ ),,false
+3.1.7,Not Started,Not Assigned,No due date,,false,Network Map,Network Map ( https://docs.datadoghq.com/network_monitoring/performance/network_map/ ),,false
+3.1.8,Not Started,Not Assigned,No due date,,false,Network Page,Network Page ( https://docs.datadoghq.com/network_monitoring/performance/network_page/ ),,false
+3.1.9,Not Started,Not Assigned,No due date,,false,Search and Manage Synthetic Tests,Search and Manage Synthetic Tests ( https://docs.datadoghq.com/synthetics/search/ ),,false
+3.2,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Alerting,,,false
+3.2.1,Not Started,Not Assigned,No due date,,false,Datadog Alerting ,Datadog Alerting ( https://docs.datadoghq.com/monitors/ ),,false
+3.2.10,Not Started,Not Assigned,No due date,,false,Leverage anomaly detection,Leverage anomaly detection ( https://docs.datadoghq.com/monitors/monitor_types/anomaly/ ),,false
+3.2.2,Not Started,Not Assigned,No due date,,false,Watchdog AI,Watchdog AI ( https://docs.datadoghq.com/watchdog/#overview ),,false
+3.2.3,Not Started,Not Assigned,No due date,,false,Create monitors (alerting),Create monitors (alerting) ( https://docs.datadoghq.com/monitors/monitor_types/ ),,false
+3.2.4,Not Started,Not Assigned,No due date,,false,Monitor based SLOs,Monitor based SLOs ( https://docs.datadoghq.com/monitors/service_level_objectives/monitor/#overview ),,false
+3.2.5,Not Started,Not Assigned,No due date,,false,Manage Monitors,Manage Monitors ( https://docs.datadoghq.com/monitors/manage_monitor/ ),,false
+3.2.6,Not Started,Not Assigned,No due date,,false,Point and click Timeboard graphs to create alerts,Point and click Timeboard graphs to create alerts ( https://cl.ly/7c15db13c00e ),,false
+3.2.7,Not Started,Not Assigned,No due date,,false,Customize notification messages,Customize notification messages ( https://docs.datadoghq.com/monitors/notifications/?tab=is_alertis_warning#advanced-variable-usage ),,false
+3.2.8,Not Started,Not Assigned,No due date,,false,Leverage outlier detection,Leverage outlier detection ( https://docs.datadoghq.com/monitors/monitor_types/outlier/ ),,false
+3.2.9,Not Started,Not Assigned,No due date,,false,Apply metric forecasting,Apply metric forecasting ( https://docs.datadoghq.com/monitors/monitor_types/forecasts/#forecast-algorithms ),,false
+4,Complete,Not Assigned,No due date,All scenarios completed on 04/6/2026,false,Phase 3: POV Review,,,false
+4.1,Not Started,Not Assigned,No due date,,false,End of POV Review,,,false
