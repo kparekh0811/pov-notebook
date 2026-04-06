@@ -1,6 +1,8 @@
 # pov-notebook
 
-A Claude Code slash command that generates a Datadog PoV notebook markdown file from a Technical Evaluation Plan Excel spreadsheet.
+A Claude Code slash command that generates two outputs from a Datadog PoV Technical Evaluation Plan Excel spreadsheet:
+1. A Datadog Notebook markdown file ready to import into Datadog Notebooks
+2. A Homerun-compatible eval plan CSV ready to import into Presales Homerun
 
 ## What it does
 
@@ -14,7 +16,7 @@ Given a `.xlsx` PoV evaluation plan, the `/pov-notebook` command extracts:
 - Tech plan phases and configuration checklist
 - Deployment prerequisites and network requirements
 
-And outputs a fully structured `.md` notebook file ready to import into Datadog Notebooks.
+And outputs two files to the same directory as the input Excel file.
 
 ## Installation
 
@@ -44,7 +46,12 @@ In Claude Code, run:
 /pov-notebook /path/to/your-eval-plan.xlsx
 ```
 
-The output `.md` file is written to the same directory as the input file, named `<customer-name>-pov-notebook.md`.
+Two files are written to the same directory as the input Excel:
+
+| Output file | Purpose |
+|---|---|
+| `<customer>-pov-notebook.md` | Import into Datadog Notebooks |
+| `<customer>-homerun-evalplan.csv` | Import into Presales Homerun |
 
 ## Requirements
 
@@ -64,3 +71,60 @@ Expected sheets:
 | Mutual Action Plan | Schedule, meetings, owners |
 | Tech Plan | Phase-by-phase configuration checklist |
 | Pre-Requisites & Architecture | Network requirements, assumptions |
+
+## Homerun CSV format
+
+The Homerun eval plan CSV uses a hierarchical format that maps directly to Homerun's eval plan import structure.
+
+### Columns
+
+| Column | Description |
+|---|---|
+| `Depth Value` | Hierarchical dot-notation position (e.g. `1`, `1.1`, `1.1.2`) |
+| `Status` | `Not Started`, `In Progress`, or `Complete` |
+| `Assignee` | Assigned user (defaults to `Not Assigned`) |
+| `Due Date` | Date or `No due date` |
+| `Status Text` | Free-text status note |
+| `Roll up children's status` | `true` if the row has children, `false` for leaf items |
+| `Name` | Item name |
+| `Description` | Item description; doc links formatted as `Text ( https://... )` |
+| `Success Criteria` | Acceptance criteria for the item |
+| `Shared` | Whether the item is shared with the customer (`true`/`false`) |
+
+### Structure
+
+The generated CSV follows this top-level structure:
+
+| Section | Depth | Source |
+|---|---|---|
+| Success Criteria | `1` | Pulled from Excel Success Criteria sheet |
+| PoC Use Cases | `2` | Pulled from Excel Use Cases sheet |
+| Phase 0: Sign up / Trial Setup | `3` | From Homerun template |
+| Phase 1: Configuration / Data Collection | `4` | From Homerun template, filtered by tech stack |
+| Phase 2: Inside the UI | `5` | From Homerun template |
+| Phase 3: POV Review | `6` | From Homerun template |
+
+### Tech stack filtering
+
+Phase 1 sections are automatically included or excluded based on the customer's tech stack detected from the Excel. For example, a GCP/GKE customer will get GCP, Kubernetes, and GCP-specific log/APM sections — AWS, Azure, and Windows sections are dropped.
+
+| Tech stack detected | Sections included |
+|---|---|
+| GCP | GCP infrastructure |
+| AWS | AWS infrastructure |
+| Azure | Azure infrastructure |
+| GKE / EKS / AKS / Kubernetes | Kubernetes section |
+| Linux hosts | Host Based Agent - Linux |
+| Windows hosts | Host Based Agent - Windows |
+| Java / Kotlin | APM Java |
+| Node.js | APM Node.js |
+| .NET / C# | APM .NET |
+| Python | APM Python |
+| RUM / Session Replay | RUM section |
+| Synthetics | Synthetic Testing section |
+| Logs | Log Collection section |
+| Security | Security section |
+| Network monitoring | Networks section |
+| Cloud cost | Cloud Cost Management section |
+
+The base Homerun template is stored at `homerun/evalplan-template.csv` in this repo and can be updated as new products or sections are added.
