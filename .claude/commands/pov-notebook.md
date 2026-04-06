@@ -24,7 +24,7 @@ Parse the following data (sheet names vary — use fuzzy/partial matching):
 - **Use Cases / PoC Use Cases sheet**: Each use case and its priority (P1, P2, etc.)
 - **Mutual Action Plan / Schedule sheet**: All tasks/meetings with dates, owners, and status
 - **Pre-Requisites / Architecture sheet**: Network requirements, assumptions
-- **Tech Plan sheet**: Phases and configuration items
+- **Tech Plan sheet**: Phases, configuration items, estimated time, **responsible party** (customer team/person), target completion date, status, and notes. The responsible party column name may vary (e.g. "Responsible Party GFiber", "Responsible Party", "Owner") — capture it regardless of the customer name in the header.
 
 ---
 
@@ -90,12 +90,23 @@ template_variables: []
 ## Schedule
 
 ### Phase 0 — Pre-Work
-- [ ] <item>
+
+| Task | Responsible Party | Target Date | Status |
+|---|---|---|---|
+| <item> | <Datadog (SE) \| Customer Team \| Both> | <date or blank> | |
 
 ### Phase 1 — Configuration / Data Collection
 
+Render each product area as a sub-section with a table. The table must always have a **Responsible Party** column so ownership is explicit and trackable. Use the value from the Tech Plan sheet's responsible party column when present; if blank, default based on the item type:
+- Items that require customer access, credentials, or environment changes → `<Customer Name> Team`
+- Items that are Datadog configuration, instrumentation guidance, or documentation → `Datadog (SE)`
+- Items that require both → `Both`
+
 #### <Product Area>
-- [ ] <config item>
+
+| Task | Responsible Party | Target Date | Status |
+|---|---|---|---|
+| <config item> | <Datadog (SE) \| Customer Team \| Both> | <date or blank> | |
 
 ### Phase 2 — Working Sessions & Check-ins
 
@@ -104,8 +115,11 @@ template_variables: []
 | <date> | <event + duration> | <DD attendees> · <Customer attendees> |
 
 ### Phase 3 — PoV Review
-- [ ] End of PoV review
-- [ ] Confirm final scope & volume
+
+| Task | Responsible Party | Target Date | Status |
+|---|---|---|---|
+| End of PoV review | Datadog (SE) | | |
+| Confirm final scope & volume | Both | | |
 
 ## Deployment Resources
 
@@ -133,7 +147,7 @@ Depth Value,Status,Assignee,Due Date,Status Text,Roll up children's status,Name,
 Column rules:
 - `Depth Value`: hierarchical dot-notation number (`1`, `1.1`, `1.1.1`, `2`, `2.1`, etc.)
 - `Status`: `Not Started` for all rows
-- `Assignee`: `Not Assigned`
+- `Assignee`: Use the responsible party value from the Tech Plan sheet when present. If blank, apply the same default logic as the notebook: customer-side setup tasks → customer contact name or `<Customer> Team`; Datadog guidance/instrumentation → `Datadog (SE)`; shared tasks → `Both`. Fall back to `Not Assigned` only if ownership truly cannot be determined.
 - `Due Date`: `No due date` (use actual date only if a specific milestone date is known from the Mutual Action Plan)
 - `Status Text`: empty
 - `Roll up children's status`: `true` for any row that has children, `false` for leaf items
